@@ -87,4 +87,10 @@ src/jaxformer/
   cli.py         `jaxformer train | profile`
 scripts/         colab CLI drivers + run.py (the on-VM entry point)
 tests/           CPU smoke test + TPU-only flash/reference parity check
+notebooks/       the original Colab notebooks the package was extracted from
 ```
+
+`notebooks/jax_transformer.ipynb` is the first version, which learns multi-digit addition
+(`522+969=1491`). `notebooks/jax_transformer_fineweb.ipynb` scales it up to FineWeb-EDU and
+became `src/jaxformer/`. They run top to bottom in Colab (they mount Drive for outputs) and
+are kept as they were written.
