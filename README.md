@@ -1,7 +1,8 @@
 # jaxformer
 
-A from-scratch decoder-only transformer in **pure JAX** (no Flax/Optax/Haiku). Attention,
-RoPE, LayerNorm, AdamW and the cosine LR schedule are all hand-written, and params are plain
+A from-scratch decoder-only transformer in JAX (no Flax/Optax/Haiku). Attention,
+RoPE, LayerNorm, AdamW and the cosine LR schedule are all hand-written in the notebooks 
+(I got Claude to organise it into a nice package). Params are plain
 dataclasses registered as pytrees. It trains on FineWeb-EDU on a Colab TPU, driven entirely
 from a local terminal by the [`colab` CLI](https://pypi.org/project/google-colab-cli/).
 
