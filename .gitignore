@@ -1,0 +1,19 @@
+# build / packaging
+dist/
+build/
+*.egg-info/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# uv-managed virtualenv (uv.lock IS committed)
+.venv/
+
+# run outputs pulled back from Colab
+artifacts/
+*.pkl
+mlflow.db
+mlruns/
+jax-trace*/
+*.tar.gz
+
